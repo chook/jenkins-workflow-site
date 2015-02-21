@@ -16,9 +16,11 @@ node {
   archive "target/universal/*.zip"
 
   echo "chen1"
-  newname = buildname("target/universal/siteplay-1.0-SNAPSHOT.zip")
+  def newname = buildname("target/universal/siteplay-1.0-SNAPSHOT.zip")
+  echo "chen1-1"
   echo "chen2: " + newname
 }
+echo "bye"
 
 def buildname(name) {
   name - ".zip" + "-${env.BUILD_NUMBER}.zip"
