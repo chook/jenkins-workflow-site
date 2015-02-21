@@ -16,7 +16,7 @@ node {
   archive "target/universal/*.zip"
 
   echo "chen1"
-  def newname = buildname("target/universal/siteplay-1.0-SNAPSHOT.zip")
+  newname = buildname("target/universal/siteplay-1.0-SNAPSHOT.zip")
   echo "chen1-1"
   echo "chen2: " + newname
 }
