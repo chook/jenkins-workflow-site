@@ -23,5 +23,5 @@ node {
 echo "bye"
 
 def buildname(name) {
-  name - ".zip" + "-${env.BUILD_NUMBER}.zip"
+  name - ".zip"// + "-${env.BUILD_NUMBER}.zip"
 }
